@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>rubric 3</title>
+<script language="javascript">
+	
+	
+	
+	for( var c= 2; c<4; c++){
+		alert (c);
+	
+	}
+	var b= 7;
+	
+	while (b<9) {
+		
+		alert(b);
+		b++;
+	}
+	
+	
+	
+	var myGames = ["smash", "Cuphead", "Let's go! Game Time!", "Power Stone" ];
+	
+	alert (myGames[2]);
+	
+	var myGames = new Array();
+	myGames[0] = "Smash";
+	myGames[1] = "What's my Favorite Games?";
+	myGames[2] = "Splatoon";
+	
+	document.write(myGames[1]);
+	
+
+	</script>
+</head>
+
+<body>
+	
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var myGames = ["Smash", "Cuphead", "Splatoon", "Power Stone" ];
+document.getElementById("demo").innerHTML = myGames;
+function myFunction() {
+    myGames.splice(0, 1);
+    document.getElementById("demo").innerHTML = myGames;
+}
+</script>
+	
+</body>
+</html>
