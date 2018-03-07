@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Body */
+
+body {
+	max-width: 1400px;
+	width: 1200px;
+	min-width: 1000px;
+	height: 700px;
+	background: white; /* For browsers that don't support gradients */
+	background: -webkit-linear-gradient(#F26EFF, #ffffff);
+	background: -moz-linear-gradient(#F26EFF, #ffffff);
+	background: -o-linear-gradient(#F26EFF, #ffffff);
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	padding: 0;
+	
+}
+.container {
+	max-width: 1200px;
+	width: 1000px;
+	min-width: 800px;
+	min-height: 700px;
+	border: solid 3px black;
+	border-radius: 15px;
+	background: white;
+	background-image: url("../img/nelnel-chan.gif"); 
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	margin: 0 auto;
+	padding: 0;
+	
+}
+
+@font-face {
+	font-family: webpixel;
+	src: url(../fonts/webpixel.otf);
+}
+
+p {
+	font-family: 'webpixel', sans-serif;
+}
+
+/* Header */
+
+header h1 {
+	text-align: center;
+	color: black;
+	font-family: 'webpixel', sans-serif;
+	font-size: 2.5em;
+	border-bottom: solid 3px black;
+	padding: 25px;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 25px;
+}
+.hide{
+	display: none;
+}
+
+/* Navigation */
+
+.menubar {
+	max-width: 137px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+.menubar li, a {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+	list-style-type: none;
+	list-style-image: url("../img/bullet.png");
+	padding: 2.5px;
+	font-size: 1.25em;
+	font-family: 'webpixel', snas-serif;
+	
+}
+
+.menubar li a:hover {
+	text-decoration: underline;
+}
+
+/* Section */
+
+.content {
+	width: 840px;
+	height: 500px;
+	border-bottom: solid 3px black;
+	border-left: solid 3px black;
+	margin-top: -25px;
+	margin-bottom: 0;
+	
+	padding-bottom: 50px;
+	float: right;	
+	
+}
+
+.content h2 {
+	font-family: 'webpixel', san-serif;
+	padding-left: 15px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+}
+.hide {
+  display: none;
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+	color: black;
+	padding-top: 2.5px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-family: 'webpixel', san-serif;
+	font-size: 1.5em;
+	clear: both;
+}
+
+/* Home Page */
+
+
+
+.paragraph1 {
+	padding: 20px 15px 0 20px;
+	float: left;
+	width: 30%;
+}
+
+.paragraph2 {
+	padding-top: 20px;
+	padding-right: 15px;
+	float: left;
+	width: 30%;
+}
+
+.paragraph3 {
+	padding-top: 20px;
+	float: left;
+	width: 30%;
+}
+
+
+/* About Page*/
+
+.tier1 {
+	
+}
+
+.tier2 {
+	
+}
+.paragraph4 {
+	padding: 2px 15px 0 20px;
+	float: left;
+	width: 30%;
+}
+
+.paragraph5 {
+	padding: 2px 15px 0 0;
+	float: left;
+	width: 30%;
+}
+
+.paragraph6 {
+	padding: 2px 0 0 0;
+	float: left;
+	width: 30%;
+}
+
+
+/* Portfolio */
+
+/* Contact */
+
+input[type=text] {
+	width: 100%;
+    padding: 12px 20px;
+    margin: 10px -5px 10px 0;
+    display: inline-block;
+    border: 1px solid cornflowerblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+	
+
+}
+
+input[type=email] {
+	width: 100%;
+    padding: 12px 20px;
+    margin: 10px -5px 10px 0;
+    display: inline-block;
+    border: 1px solid cornflowerblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+input[type=submit] {
+	width: 90%;
+    background-color: deeppink;
+    color: white;
+    padding: 7px 7px;
+    margin: 10px -5px 10px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type=reset] {
+	width: 90%;
+    background-color: deeppink;
+    color: white;
+    padding: 7px 7px;
+    margin: 10px -5px 10px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+label {
+	margin: 0 0 0 5px;
+	padding: 0;
+	color: black;
+	font-family: 'webpixel', sans-serif;
+	font-size: 1.25em;
+}
+
+.contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.click input[type=button] {
+	width: 10%;
+	display: inline-flex;
+	background: radial-gradient(#F52449, #2BD52B);
+	cursor: pointer;
+	color: whitesmoke;
+	margin: 10px;
+	padding: 10px;
+}
+
+.click input[type=button]:hover {
+	width: 10%;
+	display: inline-flex;
+	background: radial-gradient(#2BD52B, #F52449);
+	cursor: pointer;
+	color: whitesmoke;
+	margin: 10px;
+	padding: 10px;
+}
+	
