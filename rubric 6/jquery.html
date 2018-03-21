@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JQuery DOM Manipulation</title>
+<link href="jqu.css" rel="stylesheet" type="text/css">
+
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+</head>
+
+
+<body>
+
+<p>Help! Make this things go away</p>
+<p>This is me! Me! Get me off the screen!</p>
+<p>This has go to go.</p>
+<p>Go! Go! Go!<p>
+
+<ul>
+<li id="changeme" style="color:#9CFB59;">Change My Color to my favorite color</li>
+<li id="hideme">Hide Away! Please!</li>
+</ul>
+
+<div id="moveme" style="height:30px; width: 100px; background-color:#EB2C2F">
+  <p>Move Me Upwords!</p>
+</div>
+
+<img src="images/DLdJDV1VYAA8lw6.jpg" alt="pic" width="400" height="500" id="blurme">
+
+
+
+<form id="favClassList"> 
+<label for="firstName">Email</label>
+<input type="text" /></form><br/>
+<label for="LastName">Contact</label>
+<input type="text" />
+
+<br/><br/>
+<label>
+      <input type="radio" name="favClassRadios" value="web1" id="favClass_0">
+      Life hobbies </label><br/>
+      
+      <label>
+      <input type="radio" name="favClass" value="web2" id="favClass_1">
+      Pictures</label><br/>
+      
+      <label>
+          <input type="radio" name="favClass" value="program" id="favClass_2">
+          Games </label><br/>
+<input value="Submit" type="submit" />
+</form>
+
+
+ 
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<blockquote>&nbsp;</blockquote>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	$('#changeme').on('click', function(){
+	var $this=$(this);
+	$this.css('background-color', '#000000');})
+
+	$('#hideme').click(function(){
+	$(this).hide();
+		});
+
+	$('#blurme').mouseenter(function(){
+	$(this).fadeTo("slow", .2);
+		});
+
+	$('#blurme').mouseleave(function(){
+	$(this).fadeTo("fast", 5.0);
+		});
+		
+	$('#moveme').mouseenter(function(){
+	$(this).css("color","red").slideUp(2000);
+		});
+		
+	});
+
+</script>
+</body>
+</html>
